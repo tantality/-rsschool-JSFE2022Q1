@@ -18,12 +18,22 @@
 
   
 .h3-title{
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.h4-title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color:#545454;
 }
 
 .wrapper{
@@ -248,7 +258,7 @@ letter-spacing: 0.06em;
     row-gap: 60px;
 }
 
-.our-friends__h3-title{
+.our-friends__h3-title, .help__h3-title{
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -351,4 +361,27 @@ letter-spacing: 0.06em;
 
 
 
+
 /* Help */
+
+
+.help__content{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 120px;
+    row-gap: 55px;
+    justify-content: center;
+}
+
+.help-item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* In addition */
