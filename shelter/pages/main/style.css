@@ -3,7 +3,27 @@
     --light-pink:#FDDCC4;
     --white: #FAFAFA;
     --gray: #CDCDCD;
+    --dark-gray:#4C4C4C;
+    --black:#292929;
 }   
+
+.h2-title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+  }
+
+  
+.h3-title{
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+}
 
 .wrapper{
     min-width: 100%;
@@ -17,6 +37,11 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
+}
+
+.container_base-padding{
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .header__container{
@@ -67,7 +92,6 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: var(--gray);
 }
 
 .list-item__link{
@@ -75,15 +99,19 @@
     height: 100%;
 }
 
-.link_color-gray{
+.link_color-dark-gray,.text_color-dark-gray,.title_color-dark-gray{
+    color:var(--dark-gray);
+}
+
+.link_color-gray,.text_color-gray,.title_color-gray{
     color:var(--gray);
 }
 
-.link_color-white{
+.link_color-white, .text_color-white,.title_color-white{
     color:var(--white);
 }
 
-.link_color-light-pink{
+.link_color-light-pink,.text_color-pink,.title_color-pink{
     color:var(--pink);
 }
 
@@ -113,11 +141,7 @@
 
 
 
-
-
-
-
-
+  
     /* Not only */
 
   .not-only{
@@ -131,7 +155,7 @@
       align-items: center;
   }
 
-  .not-only__content{
+  .not-only__info{
       display: flex;
       flex-direction: column;
       row-gap: 42px;
@@ -141,15 +165,6 @@
 
   .img{
       width: 100%;
-  }
-
-  .h2-title{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 130%;
-    color: var(--white);;
   }
 
 .block{
@@ -167,7 +182,7 @@
     font-size: 17px;
     line-height: 130%;
     letter-spacing: 0.06em;
-    color: #292929;
+    color: var(--black);
 
 }
 
@@ -175,3 +190,22 @@
     background-color: var(--light-pink);
 }
 
+
+
+
+
+/* About */
+
+.about__container{
+    display: grid;
+    grid-template-columns: 300px  minmax(250px,430px);
+    grid-column-gap: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
