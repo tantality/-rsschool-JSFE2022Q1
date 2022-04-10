@@ -5,6 +5,7 @@
     --light-gray:#F6F6F6;
     --gray: #CDCDCD;
     --dark-gray:#4C4C4C;
+    --very-dark-gray:#545454;
     --black:#292929;
 }   
 
@@ -33,7 +34,15 @@
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
-    color:#545454;
+}
+
+.h5-title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
 }
 
 .wrapper{
@@ -116,6 +125,12 @@
     height: 100%;
 }
 
+.link_color-very-dark-gray,
+.text_color-very-dark-gray,
+.title_color-very-dark-gray{
+    color:var(--very-dark-gray);
+}
+
 .link_color-dark-gray,
 .text_color-dark-gray,
 .title_color-dark-gray{
@@ -159,9 +174,9 @@
 .nav__list-item:hover .list-item__link{
     color: var(--dark-white);
 }
-  .nav__list-item.active.nav__list-item:after {
+.nav__list-item.active.nav__list-item:after {
     width: 100%;
-  }
+}
 
 
 
@@ -169,28 +184,28 @@
 
     /* Not only */
 
-  .not-only{
-      margin-top: 60px;
-  }
+.not-only{
+    margin-top: 60px;
+}
 
-  .not-only__container{
-      display: grid;
-      grid-template-columns: minmax(250px,460px)  minmax(350px,698px);
-      grid-column-gap: 42px;
-      align-items: center;
-  }
+.not-only__container{
+    display: grid;
+    grid-template-columns: minmax(250px,460px)  minmax(350px,698px);
+    grid-column-gap: 42px;
+    align-items: center;
+}
 
-  .not-only__info{
-      display: flex;
-      flex-direction: column;
-      row-gap: 42px;
-      align-items: flex-start;
-      margin-top: -80px;
-  }
+.not-only__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+    align-items: flex-start;
+    margin-top: -80px;
+}
 
-  .img{
-      width: 100%;
-  }
+.img{
+    width: 100%;
+}
 
 .block{
     display: block;
@@ -219,12 +234,9 @@
     background-color: var(--pink);
 }
 
-.button:hover{
+.button:hover, .bank-account:hover{
     background-color: var(--light-pink);
 }
-
-
-
 
 
 
@@ -237,7 +249,6 @@
     grid-column-gap: 120px;
     justify-content: center;
     align-items: center;
-    /* align-content: center; */
 }
 
 .about__info{
@@ -350,14 +361,13 @@
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
-    color: #545454;
+    color:var(--very-dark-gray);
 }
 
 .slide__button{
     box-sizing: border-box;
     cursor: pointer;
 }
-
 
 
 
@@ -384,4 +394,57 @@
 
 
 
+
 /* In addition */
+
+.in-addition__container{
+    display: grid;
+    grid-template-columns: minmax(390px,505px)  minmax(350px,380px);
+    grid-column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-addition__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.in-addition__text{
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #B2B2B2;
+}
+
+.in-additional__bank-account{
+    background-color: var(--pink);
+    border-radius: 9px;
+}
+
+.bank-account__anchor{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+}
+
+.bank-account__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.bank-account__icon{
+    background-image: url('../../assets/icons/credit-card.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 23px;
+    width: 30px;
+    height: 23px;
+}
