@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="../../assets/fonts/arial/arial-font.css">
+    <link rel="stylesheet" href="../../assets/fonts/georgia/georgia-font.css">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
-            <header class="hedaer">
+            <header class="header header_bg-dark-white">
                 <div class="container header__container">
                     <div class="logo">
                         <h1 class="logo__title logo__title_mb-10 title_color-dark-white"><a class="link_color-very-dark-gray" href="../main/index.html">Cozy House</a></h1>
@@ -30,37 +32,87 @@
             <section class="our-friends our-friends_bg-light-gray" id="our-friends">
                 <div class="container our-friends__container container_base-padding">
                     <h3 class="h3-title our-friends__h3-title title_color-dark-gray ">Our friends who <span class="block">are looking for a house</span></h3>
-                    <div class="slider">
-                        <button class="circle-btn slider__prev-btn"></button>
-                        <div class="slider__content">
-                            <div class="slider__slide slide">
-                                <a class="slide__anchor slide__container" href="../pets/index.html">
-                                    <img class="slide__img img" src="../../assets/images/pets-katrine.png" alt="Cat Katrine">
-                                    <div class="slide__content"><div class="slide__text">Katrine</div><button class="slide__button button button_bg-none">Learn more</button></div>
-                                </a>
-                            </div>
-                            <div class="slider__slide slide">
-                                <a class="slide__anchor slide__container" href="../pets/index.html">
-                                    <img class="slide__img img" src="../../assets/images/pets-jennifer.png" alt="Dog Jennifer">
-                                    <div class="slide__content">
-                                        <div class="slide__text">Jennifer</div>
-                                        <button class="slide__button button button_bg-none">Learn more</button>
+                        <div class="card-group">
+                            <div class="card-group__card card">
+                                <a class="card__anchor card__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-katrine.png" alt="Cat Katrine">
+                                    <div class="card__content">
+                                        <div class="card__text">Katrine</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
                                     </div>
                                 </a>
                             </div>
-                            <div class="slider__slide slide">
-                                <a class="slide__anchor slide__container" href="../pets/index.html">
-                                    <img class="slide__img img" src="../../assets/images/pets-woody.png" alt="Dog Woody">
-                                    <div class="slide__content">
-                                        <div class="slide__text">Woody</div>
-                                        <button class="slide__button button button_bg-none">Learn more</button>
+                            <div class="card-group__card card">
+                                <a class="card__anchor card__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-jennifer.png" alt="Dog Jennifer">
+                                    <div class="card__content">
+                                        <div class="card__text">Jennifer</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor slide__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-woody.png" alt="Dog Woody">
+                                    <div class="card__content">
+                                        <div class="card__text">Woody</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor slide__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-sophia.png" alt="Dog Sophia">
+                                    <div class="card__content">
+                                        <div class="card__text">Sophia</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor card__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-timmy.png" alt="Cat Timmy">
+                                    <div class="card__content">
+                                        <div class="card__text">Timmy</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor card__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-charly.png" alt="Dog Charly">
+                                    <div class="card__content">
+                                        <div class="card__text">Charly</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor slide__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-scarlet.png" alt="Dog Scarlett">
+                                    <div class="card__content">
+                                        <div class="card__text">Scarlett</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-group__card card">
+                                <a class="card__anchor slide__container" href="../pets/index.html">
+                                    <img class="card__img img" src="../../assets/images/pets-freddie.png" alt="Cat Freddie">
+                                    <div class="card__content">
+                                        <div class="card__text">Freddie</div>
+                                        <button class="card__button button button_bg-none">Learn more</button>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        <button class="circle-btn slider__next-btn"></button>
+                    <div class="button-group">
+                        <button class="circle-btn circle-btn_disabled h4-title">&lt;&lt;</button>
+                        <button class="circle-btn circle-btn_disabled h4-title">&lt;</button>
+                        <button class="circle-btn circle-btn_active  h4-title">1</button>
+                        <button class="circle-btn h4-title">&gt;</button>
+                        <button class="circle-btn h4-title">&gt;&gt;</button>
                     </div>
-                    <a href="../pets/index.html" class="button button_bg-pink">Get to know the rest</a>
                 </div>
             </section>
         </main>

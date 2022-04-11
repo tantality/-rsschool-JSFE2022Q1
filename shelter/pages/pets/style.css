@@ -60,6 +60,11 @@
     background:var(--light-gray);
 }
 
+
+.header_bg-dark-white{
+    background:white;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -69,6 +74,13 @@
 .container_base-padding{
     padding-top: 80px;
     padding-bottom: 100px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__container{
@@ -230,7 +242,6 @@
 .our-friends__container{
     display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 60px;
 }
 
@@ -252,58 +263,47 @@
     background-position: center center;
 }
 
-.circle-btn:hover,
-.slide:hover .button_bg-none{
+.circle-btn_disabled{
+    border: 2px solid var(--gray);
+    color: var(--gray);
+    cursor: default;
+}
+
+.circle-btn:not(.circle-btn_disabled):hover,
+.card:hover .button_bg-none,
+.circle-btn_active{
     background-color: var(--light-pink);
     border-color: var(--light-pink);
 }
 
-.slider__prev-btn{
-    background-image: url('../../assets/icons/prev-arrow.svg');
-    background-size: 14px 6px;
-}
-
-.slider__next-btn{
-    background-image: url('../../assets/icons/next-arrow.svg');
-    background-size: 14px 6px;
-}
-
-.slider{
+.card-group{
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    justify-items: center;
-    align-items: center;
-    column-gap: 53px;
+    grid-template-columns: repeat(auto-fit,270px);
+    gap: 30px 40px;
+    justify-content: center;
 }
 
-.slider__content{
-    display: grid;
-    grid-template-columns: repeat(3,minmax(240px,270px));
-    grid-row: minmax(240px,1fr);
-    column-gap: 90px;
-}
-
-.slide__anchor{
+.card__anchor{
     display: block;
     width: 100%;
     height: auto;
 }
 
-.slide__container{
+.card__container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-.slide__img{
+.card__img{
     background-size: 270px 270px;
     max-height: 270px;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.slide__content{
+.card__content{
     background-color: var(--dark-white);
     justify-self: center;
     display: flex;
@@ -314,11 +314,11 @@
     padding: 30px 0;
 }
 
-.slide:hover .slide__content{
+.card:hover .card__content{
     background-color: white;
 }
 
-.slide__text{
+.card__text{
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -328,9 +328,15 @@
     color:var(--very-dark-gray);
 }
 
-.slide__button{
+.card__button{
     box-sizing: border-box;
     cursor: pointer;
+}
+
+.button-group{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
 }
 
 

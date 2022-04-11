@@ -316,7 +316,6 @@
 .slider__content{
     display: grid;
     grid-template-columns: repeat(3,minmax(240px,270px));
-    grid-row: minmax(240px,1fr);
     column-gap: 90px;
 }
 
