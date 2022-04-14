@@ -276,6 +276,10 @@
     border-color: var(--light-pink);
 }
 
+.circle-btn_active{
+    cursor: default;
+}
+
 .card-group{
     display: grid;
     grid-template-columns: repeat(auto-fit,270px);
