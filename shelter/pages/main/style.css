@@ -604,6 +604,14 @@
     .our-friends__button {
         margin-top: -4px;
     }
+
+    .help__content {
+        column-gap: 55px;
+    }
+
+    .help-item {
+        width: 24%
+    }
 }
 
 
@@ -720,6 +728,35 @@
         padding-bottom: 42px;
         row-gap: 42px;
     }
+
+    .container_base-padding {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .help__content {
+        margin-top: 42px;
+    }
+
+
+    .help-item__text {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    .help-item__icon {
+        max-width: 50px;
+    }
+
+    .help__content {
+        gap: 30px;
+    }
+
+
 }
 
 
@@ -727,6 +764,14 @@
 /* 453 */
 
 @media (max-width:453px) {
+    .help-item {
+        width: 44.5%;
+        row-gap: 20px;
+    }
+
+    .help__content {
+        justify-content: flex-start;
+    }
 
     .slider__prev-btn {
         position: absolute;
@@ -773,11 +818,14 @@
 
     .not-only__h2,
     .about__h3,
-    .our-friends__h3-title {
+    .our-friends__h3-title,
+    .help__h3 {
         font-size: 25px;
         line-height: 130%;
         letter-spacing: 0.06em;
     }
+
+
 
 }
 
