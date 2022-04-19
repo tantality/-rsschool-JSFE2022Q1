@@ -470,10 +470,16 @@
 .footer__container {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: 280px 302px 300px;
-    grid-column-gap: 160px;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 302px));
+    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 12%;
     justify-content: center;
-    align-items: start;
+    justify-items: center;
+}
+
+.footer__img {
+    max-width: 300px;
 }
 
 .footer__contacts-col1,
@@ -567,7 +573,31 @@
     }
 }
 
+
+
 @media (max-width:1250px) {
+
+    .footer__container {
+        padding-top: 30px;
+        grid-column-gap: 6%;
+        grid-row-gap: 11%;
+        align-items: flex-start;
+        height: 640px;
+    }
+
+    .footer__contacts-col1,
+    .footer__contacts-col2 {
+        padding-top: 0;
+    }
+
+    .footer__contacts-col1 {
+        align-content: center;
+    }
+
+    .footer__img {
+        grid-column: span 2;
+    }
+
     .slide-3 {
         display: none;
     }
@@ -595,7 +625,6 @@
     }
 
     .in-addition__container {
-        /* margin: 0 18%; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -693,6 +722,25 @@
 }
 
 
+@media (max-width:705px) {
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        height: 915px;
+    }
+
+    .footer__contacts-col2 {
+        grid-column: span 2;
+    }
+
+    .footer__contacts-col1,
+    .footer__contacts-col2 {
+        align-items: center;
+    }
+}
+
+
 
 
 @media (max-width:670px) {
@@ -711,9 +759,31 @@
         align-self: center;
     }
 
+
+    .footer__img {
+        max-width: 260px;
+    }
+
+    .footer__container {
+        grid-template-columns: minmax(280px, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 40px;
+        height: 810px;
+    }
+
+
+    .footer__contacts-col2 {
+        row-gap: 40px;
+    }
+
+    /* .footer__h3 {
+        text-align: center;
+    } */
+
     .not-only__continuation-h2,
     .about__continuation-h3,
-    .our-friends__continuation-h3 {
+    .our-friends__continuation-h3,
+    .footer__h3 {
         text-align: center;
     }
 
@@ -841,7 +911,8 @@
     .not-only__h2,
     .about__h3,
     .our-friends__h3-title,
-    .help__h3 {
+    .help__h3,
+    .footer__h3 {
         font-size: 25px;
         line-height: 130%;
         letter-spacing: 0.06em;
