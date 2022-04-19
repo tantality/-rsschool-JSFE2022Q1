@@ -583,6 +583,7 @@
         row-gap: 80px;
     }
 
+
     .about__img {
         max-width: 300px;
         margin: 0 auto;
@@ -590,6 +591,23 @@
     }
 
     .about__info {
+        order: 1;
+    }
+
+    .in-addition__container {
+        /* margin: 0 18%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 60px;
+    }
+
+    .in-addition__img {
+        order: 2;
+    }
+
+    .in-addition__info {
+        margin: 0 23%;
         order: 1;
     }
 
@@ -756,6 +774,10 @@
         gap: 30px;
     }
 
+    .in-addition__info {
+        margin: 0 7%;
+    }
+
 
 }
 
@@ -824,8 +846,6 @@
         line-height: 130%;
         letter-spacing: 0.06em;
     }
-
-
 
 }
 
